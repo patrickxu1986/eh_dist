@@ -16,9 +16,9 @@ sh config.sh
 
 #### 3.初始化数据库
 
-将init.sql 导入到mysql
+将**init.sql**导入到mysql
 
-进入 /home/java_app/ex_highway文件夹，修改application.yml文件中的数据相关配置信息为你机器上的数据库信息
+进入 **/home/java_app/ex_highway**文件夹，将**application.yml**文件中的数据库相关域名、用户名、密码等配置信息修改为你机器上的数据库信息
 
 #### 4. 运行
 
