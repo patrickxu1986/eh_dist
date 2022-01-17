@@ -18,7 +18,7 @@ sh config.sh
 
 进入 **/home/java_app/ex_highway**文件夹
 
-将**init.sql**导入到mysql
+将**ex_highway.sql**导入到mysql
 
 将**application.yml**文件中的数据库相关域名、用户名、密码等配置信息修改为你机器上的数据库信息
 
