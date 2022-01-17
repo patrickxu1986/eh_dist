@@ -1,0 +1,54 @@
+server:
+  port: 10201
+  tomcat:
+    accept-count: 5000
+    max-connections: 2000
+    threads:
+      max: 500
+  servlet:
+    session:
+      timeout: 10800
+
+spring:
+  application:
+    name: ex-highway
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 5120MB
+      max-request-size: 5120MB
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
+  devtools:
+    livereload:
+      port: 35731
+  datasource:
+    url: jdbc:mysql://xxxx/ex_highway?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: xxx
+    password: xxx
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+  mapper-locations: classpath:mapper/*.xml
+
+logging:
+  level:
+    com.ex.highway: info
+  file:
+    path: logs
+
+path:
+  upload: /home/java_app/ex_highway/res/upload/
+  images: /home/java_app/ex_highway/res/images/
+  compound: /home/java_app/ex_highway/res/images/compound/
+  data-package: /home/java_app/ex_highway/res/datapackage/
+  upload-uri: /upload/
+  images-uri: /images/
+  compound-uri: /images/compound/
+  data-package-uri: /datapackage/
+  domain: http://eh.vipnow.work
+  res-port: 8018
